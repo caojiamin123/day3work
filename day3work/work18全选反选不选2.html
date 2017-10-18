@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work18全选反选不选2.html</title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var ainput=document.getElementsByTagName("input");
+				ainput[0].onclick=function(){
+					for(var i=3;i<ainput.length;i++){
+						ainput[i].checked=true;
+					}
+				}
+				ainput[1].onclick=function(){
+					for(var i=3;i<ainput.length;i++){
+						ainput[i].checked=false;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="全选">
+		<input type="button" value="不选">
+		<input type="button" value="反选">
+		<hr>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+	</body>
+</html>

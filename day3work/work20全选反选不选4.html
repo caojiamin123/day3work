@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work20全选反选不选4.html</title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var ainput=document.getElementsByTagName("input");
+				ainput[0].onclick=function(){
+					for(var i=3;i<ainput.length;i++){
+						ainput[i].checked=true;
+					}
+				}
+				ainput[1].onclick=function(){
+					for(var i=3;i<ainput.length;i++){
+						ainput[i].checked=false;
+					}
+				}
+				ainput[2].onclick=function(){
+					for(var i=3;i<ainput.length;i++){
+						/*if(ainput[i].checked==true){
+							ainput[i].checked=false;
+						}else{
+							ainput[i].checked=true;
+						}*/
+						ainput[i].checked=!ainput[i].checked;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="全选">
+		<input type="button" value="不选">
+		<input type="button" value="反选">
+		<hr>
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+		<input type="checkbox">
+	</body>
+</html>
